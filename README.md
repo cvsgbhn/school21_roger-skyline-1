@@ -2,7 +2,7 @@
 ## installation
 Get relevant iso from official page.
 Find literally any tutorial "how install arch linux on virtualbox". Do it until partitioning.
---pic of settings that helped me
+![this set up was not in my tutorial](./src/00001.png)
 ## partition
 With the commands fdisk -l or lsblk we discover that our harddisk is named /dev/sda.
 `lsblk lists information about all available or the specified block
@@ -11,7 +11,7 @@ With the commands fdisk -l or lsblk we discover that our harddisk is named /dev/
        compiled without udev support than it tries to read LABELs, UUIDs and
        filesystem types from the block device. In this case root permissions
        are necessary.`
-
+![no partition here ](./src/0002.png)
 `cfdisk`
 Then we start cfdisk to partition our harddisk. You can also use fdisk, gdisk or parted. cfdisk is more or less graphical partitioning tool.
 We have choosen to install UEFI or EFI so we choose now GPT.
