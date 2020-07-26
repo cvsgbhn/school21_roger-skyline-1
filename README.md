@@ -11,9 +11,20 @@ With the commands fdisk -l or lsblk we discover that our harddisk is named /dev/
        compiled without udev support than it tries to read LABELs, UUIDs and
        filesystem types from the block device. In this case root permissions
        are necessary.`
-![no partition here ](./src/0002.png)
-`cfdisk`
-Then we start cfdisk to partition our harddisk. You can also use fdisk, gdisk or parted. cfdisk is more or less graphical partitioning tool.
-We have choosen to install UEFI or EFI so we choose now GPT.
 
+You can use fdisk, gdisk or parted. cfdisk is more or less graphical partitioning tool. cfdisk didn't work for me, so I used fdisk:
+```
+fdisk /dev/sda
+```
+fdisk commands:
+![fdisk ui](./src/00002.png)
+View full table: `p`
+I created second partition of same type just because, whatever. So, my final table looks this way:
+![last fdisk command p](./src/00003.png)
+Next we write partition table and exit:
+```
+w
+q
+```
+hm, looks like I've ruined everything at this point
 ## update packages
