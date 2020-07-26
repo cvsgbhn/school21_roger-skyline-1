@@ -13,9 +13,7 @@ With the commands fdisk -l or lsblk we discover that our harddisk is named /dev/
        are necessary.`
 
 You can use fdisk, gdisk or parted. cfdisk is more or less graphical partitioning tool. cfdisk didn't work for me, so I used fdisk:
-```
-fdisk /dev/sda
-```
+`fdisk /dev/sda`
 fdisk commands:
 ![fdisk ui](./src/00002.png)
 View full table: `p`
@@ -26,5 +24,7 @@ Next we write partition table and exit:
 w
 q
 ```
-hm, looks like I've ruined everything at this point
+At this point do `reboot`. Yupee, we did partition ~UwU~
+Update all packages: `pacman -Syu`
+At this point I had a problen with mirrors and tired. See you next time.
 ## update packages
