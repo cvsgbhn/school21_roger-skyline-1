@@ -28,3 +28,17 @@ At this point do `reboot`. Yupee, we did partition ~UwU~
 Update all packages: `pacman -Syu`
 At this point I had a problen with mirrors and tired. See you next time.
 ## update packages
+
+## add a non-root user
+https://wiki.archlinux.org/index.php/Users_and_groups
+
+## static IP possible solution
+https://dominicm.com/configure-static-ip-on-arch-linux/
+
+## change SSH
+https://linuxhint.com/arch_linux_ssh_server/
+
+## SSH public key
+https://stackoverflow.com/questions/3828164/how-do-i-access-my-ssh-public-key
+
+
